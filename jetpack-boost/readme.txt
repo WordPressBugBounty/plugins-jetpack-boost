@@ -2,10 +2,10 @@
 Contributors: automattic, xwp, adnan007, bjorsch, danwalmsley, davidlonjon, dilirity, donncha, ebinnion, exelero, jeherve, jpolakovic, karthikbhatb, kraftbj, lsarsfield, luchad0res, pyronaur, rheinardkorf, scruffian, thingalon
 Donate link: https://automattic.com
 Tags: performance, speed, web vitals, critical css, cache
-Requires at least: 6.7
-Tested up to: 6.8
+Requires at least: 6.8
+Tested up to: 6.9
 Requires PHP: 7.2
-Stable tag: 4.4.0
+Stable tag: 4.5.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -183,24 +183,18 @@ If you run into compatibility issues, please do let us know. You can drop us a l
 2. Jetpack Boost Speed Improvement
 
 == Changelog ==
-### 4.4.0 - 2025-09-18
+### 4.5.7 - 2026-02-04
 #### Added
-- Cornerstone Pages: Add filter to allow the full list of pages to be changed.
+- Add Jetpack Protect details page for users without the dedicated Jetpack Protect plugin.
 
 #### Changed
-- Critical CSS: Updated UI to indicate when generated CSS is too much.
-- Do not force CRM installation for Complete plan users
-- LCP Optimization: Add User-facing notice for unstable LCP elements (carousels)
-- Updated PNG import location after refactors in My Jetpack.
 - Update package dependencies.
 
+#### Removed
+- General: Update minimum WordPress version to 6.8.
+
 #### Fixed
-- Cornerstone Pages: Fix validation error preventing URLs with GET parameters from being added to the cornerstone pages list.
-- E2E tests: improved connection flow
-- General: Fix translation warning when activating Boost.
-- Image CDN: Add support for images added via Breakdance blocks.
-- Image CDN: gracefully handle an attempt to filter null.
-- Page Cache: Fix fatal error when updating a page on multisite.
+- Compatibility: Disable JS concatenation in Beaver Builder editor to prevent script execution order issues.
 
 --------
 

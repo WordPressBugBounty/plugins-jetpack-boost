@@ -5,6 +5,85 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.5.7] - 2026-02-04
+### Added
+- Add Jetpack Protect details page for users without the dedicated Jetpack Protect plugin. [#46630]
+
+### Changed
+- Update package dependencies. [#46785] [#46854] [#46905]
+
+### Removed
+- General: Update minimum WordPress version to 6.8. [#46801]
+
+### Fixed
+- Compatibility: Disable JS concatenation in Beaver Builder editor to prevent script execution order issues. [#46827]
+
+## [4.5.6] - 2026-01-28
+### Changed
+- My Jetpack: Check red bubble notification async when cache is not available. [#46396]
+- Update composer.lock. [#46686]
+- Update package dependencies. [#46512] [#46552] [#46647]
+
+### Fixed
+- LCP: Skip image optimizations that would break responsive backgrounds or custom focal points under specific configurations. [#46683]
+
+## [4.5.5] - 2026-01-08
+### Added
+- Connection: Add revalidation for IDCs. [#46268]
+
+### Changed
+- Update package dependencies. [#46362] [#46363] [#46456]
+
+### Fixed
+- Critical CSS: Fix breaking stylesheets without media attributes. [#46455]
+
+## [4.5.4] - 2025-12-12
+### Changed
+- Image CDN: cache image quality settings per format to reduce repeated processing. [#46205]
+- Update package dependencies. [#46143]
+
+### Fixed
+- Ensure proper flags are used with `json_encode()`. [#46117]
+
+## [4.5.3] - 2025-11-27
+### Added
+- Compatibility: Add compatibility with divi builder and Deferred JS. [#45896]
+- General: Add a daily cleanup of expired transients. [#45920]
+
+### Changed
+- Update package dependencies. [#45915] [#45958] [#46022] [#46072]
+
+### Fixed
+- My Jetpack: Fix expiring renewal prompt to show all products [#45995]
+
+## [4.5.2] - 2025-11-12
+### Changed
+- Tests: Ensure PHP 8.5 compatibility. [#45769]
+- Update package dependencies. [#45676] [#45737] [#45756]
+
+### Fixed
+- LCP Optimization: Prevent requesting analysis for the same pages multiple times. [#45702]
+
+## [4.5.1] - 2025-10-29
+### Added
+- Tested up to WordPress 6.9 [#45571]
+
+### Changed
+- Update package dependencies. [#45652]
+
+### Fixed
+- Concatenate JS: Fix incompatibility with WooCommerce Analytics. [#45655]
+
+## [4.5.0] - 2025-10-15
+### Added
+- Defer JS: Exclude Slider Revolution scripts to avoid broken sliders. [#45408]
+
+### Changed
+- Update package dependencies. [#45173] [#45229] [#45241] [#45298] [#45299] [#45334] [#45335] [#45478]
+
+### Fixed
+- My Jetpack page: fix visual compatibility issue with Hello Dolly plugin. [#45474]
+
 ## [4.4.0] - 2025-09-18
 ### Added
 - Cornerstone Pages: Add filter to allow the full list of pages to be changed. [#44907]
@@ -29,7 +108,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cornerstone Pages: Add tooltips to "Include default pages" button to better explain behavior. [#44845]
 - Cornerstone Pages: Improve behavior when running on WordPress MU installations. [#44824]
 - Cornerstone Pages: Update "Load default pages" to be called "Include default pages" and change the behavior to reflect the name. [#44845]
-- My Jetpack: Fixed multisite availability check for restricted products and modules. [#44710]
+- My Jetpack: Fix multisite availability check for restricted products and modules. [#44710]
 - Update package dependencies. [#44677] [#44701] [#44725]
 
 ### Fixed
@@ -823,6 +902,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - First public alpha release
 
+[4.5.7]: https://github.com/Automattic/jetpack-boost-production/compare/4.5.6...4.5.7
+[4.5.6]: https://github.com/Automattic/jetpack-boost-production/compare/4.5.5...4.5.6
+[4.5.5]: https://github.com/Automattic/jetpack-boost-production/compare/4.5.4...4.5.5
+[4.5.4]: https://github.com/Automattic/jetpack-boost-production/compare/4.5.3...4.5.4
+[4.5.3]: https://github.com/Automattic/jetpack-boost-production/compare/4.5.2...4.5.3
+[4.5.2]: https://github.com/Automattic/jetpack-boost-production/compare/4.5.1...4.5.2
+[4.5.1]: https://github.com/Automattic/jetpack-boost-production/compare/4.5.0...4.5.1
+[4.5.0]: https://github.com/Automattic/jetpack-boost-production/compare/4.4.0...4.5.0
 [4.4.0]: https://github.com/Automattic/jetpack-boost-production/compare/4.3.1...4.4.0
 [4.3.1]: https://github.com/Automattic/jetpack-boost-production/compare/4.3.0...4.3.1
 [4.3.0]: https://github.com/Automattic/jetpack-boost-production/compare/4.2.1...4.3.0
